@@ -11,19 +11,19 @@
         = fa_icon 'cog', class: "left-header__btn--icon"
 .left-content
   .left-content__group
-    .left-content__group--name
+    .left-content__group__name
       test-group
-    .left-content__group--message
+    .left-content__group__message
       さようなら
   .left-content__group
-    .left-content__group--name
+    .left-content__group__name
       sample-group
-    .left-content__group--message
+    .left-content__group__message
       hello!!
   .left-content__group
-    .left-content__group--name
+    .left-content__group__name
       example
-    .left-content__group--message
+    .left-content__group__message
       まだメッセージはありません
 .right-header
   .right-header__title
@@ -34,25 +34,25 @@
     Edit
 .right-content
   .right-content__main
-    .right-content__main--user
+    .right-content__main__user
       test-user
-    .right-content__main--date
+    .right-content__main__date
       2019/9/9(Mon) 20:00:00
-    .right-content__main--text
+    .right-content__main__text
       こんにちは
   .right-content__main
-    .right-content__main--user
+    .right-content__main__user
       test-user
-    .right-content__main--date
+    .right-content__main__date
       2019/9/9(Mon) 20:00:00
-    .right-content__main--text
+    .right-content__main__text
       さようなら
 .post-message
   .post-message__text
     type a message
-    %label.post-message__text__image{:for => "message_image"}
+    %label.post-message__text__image{for: "message_image"}
       %i.fa.fa-image
-      %input#message_image.post-message__text--icon{:name => "message[image]", :type => "file"}
+      %input#message_image.post-message__text--icon{name: "message[image]", type: "file"}
   = link_to "https://www.facebook.com/", class: "post-message__btn" do
     Send
 
