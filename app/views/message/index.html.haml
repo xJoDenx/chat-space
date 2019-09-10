@@ -1,0 +1,57 @@
+.header
+  .header__logo
+    グループを作成しました
+.left-header
+  test-user
+  .left-header__btn
+    =link_to "https://www.facebook.com/" do
+      = fa_icon 'edit', class: "left-header__btn--icon"
+      %span<>
+      =link_to "https://twitter.com/" do
+        = fa_icon 'cog', class: "left-header__btn--icon"
+.left-content
+  .left-content__group
+    .left-content__group--name
+      test-group
+    .left-content__group--message
+      さようなら
+  .left-content__group
+    .left-content__group--name
+      sample-group
+    .left-content__group--message
+      hello!!
+  .left-content__group
+    .left-content__group--name
+      example
+    .left-content__group--message
+      まだメッセージはありません
+.right-header
+  .right-header__title
+    test-group
+  .right-header__member
+    Menber.Menber
+  =link_to "https://www.instagram.com/", class: "right-header__btn" do
+    Edit
+.right-content
+  .right-content__main
+    .right-content__main--user
+      test-user
+    .right-content__main--date
+      2019/9/9(Mon) 20:00:00
+    .right-content__main--text
+      こんにちは
+  .right-content__main
+    .right-content__main--user
+      test-user
+    .right-content__main--date
+      2019/9/9(Mon) 20:00:00
+    .right-content__main--text
+      さようなら
+.post-message
+  .post-message__text
+    type a message
+    = link_to "https://www.instagram.com/" do
+      = fa_icon 'image', class: "post-message__text--icon"
+  = link_to "https://www.facebook.com/", class: "post-message__btn" do
+    Send
+
