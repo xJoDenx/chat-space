@@ -120,17 +120,24 @@ html, body{
     height: 90px;
     &__text{
       width: calc(100% - 115px);
-      padding-left: 10px;
+      padding: 0 40px 0 10px;
       margin-right: 115px;
       line-height: 50px;
       color: #434a54;
       font-size: 16px;
       display: flex;
       justify-content: space-between;
-      &--icon{
-        line-height: 50px;
+      position: relative;
+      &__image{
+        position: absolute;
+        top: 0;
+        right: 0;
         padding-right: 10px;
+        line-height: 50px;
         color: #434a54;
+      }
+      &--icon{
+        display: none;
       }
     }
     &__btn{

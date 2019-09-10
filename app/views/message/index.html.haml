@@ -50,8 +50,9 @@
 .post-message
   .post-message__text
     type a message
-    = link_to "https://www.instagram.com/" do
-      = fa_icon 'image', class: "post-message__text--icon"
+    %label.post-message__text__image{:for => "message_image"}
+      %i.fa.fa-image
+      %input#message_image.post-message__text--icon{:name => "message[image]", :type => "file"}
   = link_to "https://www.facebook.com/", class: "post-message__btn" do
     Send
 
