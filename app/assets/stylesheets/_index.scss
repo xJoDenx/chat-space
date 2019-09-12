@@ -6,42 +6,48 @@ html, body{
   width: 300px;
   height: 100%;
   float: left;
-  .left-header{
-    height: 100px;
-    width: 100%;
-    padding: 0 20px;
-    color: #fff;
-    background-color: #253141;
-    line-height: 100px;
-    font-size: 16px;
-    font-weight: bold;
+}
+.left-header{
+  height: 100px;
+  width: 100%;
+  padding: 0 20px;
+  color: #fff;
+  background-color: #253141;
+  line-height: 100px;
+  font-size: 16px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  &__btns{
     display: flex;
-    justify-content: space-between;
-    &__btns{
-      display: flex;
-      &--icon{
-        color: #fff;
-        margin-left: 5px; 
-      }
-    }
   }
-  .left-main{
-    height: calc(100% - 100px);
-    width: 100%;
-    padding: 0 20px;
-    background-color: #2f3e51;
-    &__group{
-      padding: 20px 0;
+}
+.icon{
+  color: #fff;
+  margin-left: 5px; 
+  font-size: inherit;
+}
+.left-main{
+  height: calc(100% - 100px);
+  width: 100%;
+  padding: 0 20px;
+  background-color: #2f3e51;
+  &__group{
+    padding: 20px 0;
+    font-weight: bold;
+    &__name{
+      font-size: 15px;
+      margin-bottom: 5px;
       color: #fff;
-      font-weight: bold;
-      &__name{
-        font-size: 15px;
-      }
-      &__message{
-        font-size: 11px;
-      }
+    }
+    &__message{
+      font-size: 11px;
+      color: #fff;
     }
   }
+}
+.link{
+  text-decoration: none;
 }
 
 .right-content{
@@ -49,109 +55,105 @@ html, body{
   width: calc(100vw - 300px);
   float: right;
   background-color: #fafafa;
-  position: relative;
-  .right-header{
-    height: 100px;
-    width: 100%;
-    padding: 0 40px;
-    background-color: #fff;
-    border-bottom: 1px solid #eeeeee;
-    display: flex;
-    justify-content: space-between;
-    overflow: scroll;
-    &__group{
-      margin-top: 35px;
-      &__name{
-        font-size: 20px;
-        color: #333333;
-        line-height: 30px;
-        margin-bottom: 15px;
-      }
-      &__member{
-        font-size: 12px;
-        line-height: 18px;
-        color: #999999;
-        display: flex;
-      }
+}
+.right-header{
+  height: 100px;
+  width: 100%;
+  padding: 0 40px;
+  background-color: #fff;
+  border-bottom: 1px solid #eeeeee;
+  display: flex;
+  justify-content: space-between;
+  overflow: scroll;
+  &__group{
+    margin-top: 35px;
+    &__name{
+      font-size: 20px;
+      color: #333333;
+      line-height: 30px;
+      margin-bottom: 15px;
     }
-    &__btn{
-      height: 40px;
-      line-height: 40px;
-      padding: 0 20px;
-      margin-top: 30px;
-      color: #38AEF0;
-      border: 1px solid #38AEF0;
-      text-decoration: none;
-    }
-  }
-
-  .right-main{
-    height: calc(100% - 100px -  90px);
-    width: 100%;
-    padding: 46px 40px 0;
-    &__comment{
-      color: #434a54;
-      padding-bottom: 40px;
-      &__user{
-        font-size: 16px;
-        font-weight: bold;
-        padding-bottom: 10px; 
-        display: inline-block;
-      }
-      &__date{
-        display: inline;
-        font-size: 12px;
-        color: #999999;
-        padding-left: 10px; 
-      }
-      &__text{
-        font-size: 14px;
-      }
-    }
-  }
-
-  .post-message{
-    height: 90px;
-    width: 100%;
-    position: relative;
-    background-color:  #ddd;
-    padding: 20px 40px;
-    display: flex;
-    justify-content: space-between;
-    &__text{
-      width: 100%;
-      padding: 0 40px 0 10px;
-      background-color: #fff;
-      line-height: 50px;
-      color: #434a54;
-      font-size: 16px;
+    &__member{
+      font-size: 12px;
+      line-height: 18px;
+      color: #999999;
       display: flex;
-      justify-content: space-between;
-      position: relative;
-      &__image{
-        color: #000;
-        position: absolute;
-        top: 0;
-        right: 0;
-        padding-right: 10px;
-        line-height: 50px;
-        font-size: 1.3rem;
-      }
-      .image-icon{
-        display: none;
-      }
     }
-    &__btn{
-        height: 50px;
-        width: 100px;
-        line-height: 48px;
-        padding: 0 30px;
-        margin-left: 15px;
-        color: #fff;
-        background-color: #38AEF0;
-        border: 1px solid #ddd;
-        text-decoration: none;
+  }
+  &__btn{
+    height: 40px;
+    line-height: 40px;
+    padding: 0 20px;
+    margin-top: 30px;
+    color: #38AEF0;
+    border: 1px solid #38AEF0;
+  }
+}
+
+.right-main{
+  height: calc(100% - 100px -  90px);
+  width: 100%;
+  padding: 46px 40px 0;
+  &__comment{
+    color: #434a54;
+    padding-bottom: 40px;
+    &__user{
+      font-size: 16px;
+      font-weight: bold;
+      padding-bottom: 10px; 
+      display: inline-block;
     }
+    &__date{
+      display: inline;
+      font-size: 12px;
+      color: #999999;
+      padding-left: 10px; 
+    }
+    &__text{
+      font-size: 14px;
+    }
+  }
+}
+
+.post-message{
+  height: 90px;
+  width: 100%;
+  background-color:  #ddd;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  &__text{
+    width: 100%;
+    padding: 0 40px 0 10px;
+    background-color: #fff;
+    line-height: 50px;
+    color: #434a54;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    &__image{
+      color: #000;
+      position: absolute;
+      top: 0;
+      right: 0;
+      padding-right: 10px;
+      line-height: 50px;
+      font-size: 1.3rem;
+    }
+    .image-icon{
+      display: none;
+    }
+  }
+  &__btn{
+      height: 50px;
+      width: 100px;
+      line-height: 48px;
+      padding: 0 30px;
+      margin-left: 15px;
+      color: #fff;
+      background-color: #38AEF0;
+      border: 1px solid #ddd;
   }
 }
   

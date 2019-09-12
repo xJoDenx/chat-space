@@ -1,5 +1,5 @@
 
-= render 'message/shared/left-content'
+= render 'left-content'
 
 .right-content
   .right-header
@@ -8,7 +8,7 @@
         group
       %ul.right-header__group__member
         Menber.Menber
-    =link_to "https://www.instagram.com/", class: "right-header__btn" do
+    =link_to "", class: "right-header__btn link" do
       Edit
   .right-main
     .right-main__comment
@@ -18,7 +18,7 @@
         2019/9/9(Mon) 20:00:00
       .right-main__comment__text
         こんにちは
-    .right-main__comment
+    .right-main__comme
       .right-main__comment__user
         test-user
       .right-main__comment__date
@@ -31,6 +31,6 @@
       %label.post-message__text__image{for: "message_image"}
         %i.fa.fa-image
         %input#message_image.image-icon{name: "message[image]", type: "file"}
-    = link_to "https://www.facebook.com/", class: "post-message__btn" do
+    = link_to "https://www.facebook.com/", class: "post-message__btn link" do
       Send
 
