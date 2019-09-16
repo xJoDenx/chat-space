@@ -17,8 +17,7 @@
     = form_for [@group, @message] do |f|
       .post-message__text
         = f.text_field :content, class: "post-message__text__form", placeholder: 'type a message'
-        .post-message__text__mask
-          = f.label :image do
-            = fa_icon 'picture-o', class: 'image-icon'
-            = f.file_field :image, class: 'hidden'
+        = f.label :image, class: 'post-message__text__mask' do
+          = fa_icon 'picture-o', class: 'image-icon'
+          = f.file_field :image, class: 'hidden'
       = f.submit 'Send', class: 'post-message__btn link'

@@ -118,10 +118,8 @@ html, body{
 
 .post-message{
   height: 90px;
-  width: 100%;
   background-color:  #ddd;
   padding: 20px 40px;
-  position: relative;
   &__text{
     height: 50px;
     width: calc(100% - 115px);
@@ -155,12 +153,13 @@ html, body{
       color: #fff;
       background-color: #38AEF0;
       border: 1px solid #ddd;
-      position: absolute;
-      top: 20px;
-      right: 40px;
   }
 }
 .hidden{
   display: none;
+}
+.new_message{
+  display: flex;
+  justify-content: space-between;
 }
   
