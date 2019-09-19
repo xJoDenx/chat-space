@@ -95,7 +95,7 @@ html, body{
   width: 100%;
   padding: 46px 40px 0;
   overflow: scroll;
-  &__comment{
+  &__message{
     color: #434a54;
     padding-bottom: 40px;
     &__user{
@@ -112,6 +112,8 @@ html, body{
     }
     &__text{
       font-size: 14px;
+    }
+    &__image{
     }
   }
 }

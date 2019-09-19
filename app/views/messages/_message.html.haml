@@ -1,11 +1,12 @@
 
-.right-main__comment
-  .right-main__comment__user
+.right-main__message
+  .right-main__message__user
     = message.user.name
-  .right-main__comment__date
+  .right-main__message__date
     = message.created_at.strftime("%Y/%m/%d %H:%M")
-  .right-main__comment__text
+  .right-main__message__text
     - if message.content.present?
       = message.content
+  .right-main__message__image
     = image_tag message.image.url, class: 'lower-message__image' if message.image.present?
     
