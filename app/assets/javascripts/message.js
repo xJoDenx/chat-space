@@ -41,6 +41,7 @@ $(document).on('turbolinks:load', function() {
     })
     .fail(function(){
       alert('error');
+      $('.post-message__btn').prop('disabled', false);
     })
   })
 });
