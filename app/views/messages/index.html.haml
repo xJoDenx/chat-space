@@ -7,8 +7,9 @@
       .right-header__group__name
         = @group.name
       .right-header__group__member
+        Member: 
         - @group.users.each do |user|
-          = user.name + "."
+          = user.name + ","
     =link_to edit_group_path(@group.id), class: "right-header__btn link" do
       Edit
   .right-main

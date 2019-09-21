@@ -113,8 +113,6 @@ html, body{
     &__text{
       font-size: 14px;
     }
-    &__image{
-    }
   }
 }
 
@@ -163,5 +161,9 @@ html, body{
 .new_message{
   display: flex;
   justify-content: space-between;
+}
+
+.message__image{
+  width: 200px;
 }
   

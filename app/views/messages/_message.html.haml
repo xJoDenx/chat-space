@@ -1,5 +1,5 @@
 
-.right-main__message
+.right-main__message{data: {id: "#{message.id}"}}
   .right-main__message__user
     = message.user.name
   .right-main__message__date
@@ -8,5 +8,5 @@
     - if message.content.present?
       = message.content
   .right-main__message__image
-    = image_tag message.image.url, class: 'lower-message__image' if message.image.present?
+    = image_tag message.image.url, class: 'message__image' if message.image.present?
     
