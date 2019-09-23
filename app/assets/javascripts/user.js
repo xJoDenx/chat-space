@@ -1,6 +1,5 @@
 $(document).on('turbolinks:load', function() {
 
-  var add_btn = "user-search-remove chat-group-user__btn chat-group-user__btn--remove js-remove-btn"
   function buildHTML(user){
     var html = `<div class="chat-group-user clearfix">
                   <p class="chat-group-user__name">${user.name}</p>
